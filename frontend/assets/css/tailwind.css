@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    @apply bg-white;
+}
+
+@layer components {
+    .kHeader {
+        @apply text-emerald-800 text-2xl font-bold
+    }
+    .kHeaderSM {
+        @apply text-emerald-800 text-4xl font-bold
+    }
+    .kBtn {
+        @apply inline-block rounded bg-emerald-700 px-7 pt-3 pb-4 font-medium text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-75 ease-in;
+    }
+    .kBtnHover {
+        @apply bg-emerald-800 transition duration-75 ease-in;
+    }
+    .kSubBtn {
+        @apply inline-block rounded bg-emerald-700 px-4 pt-1.5 pb-2.5 text-sm font-medium text-white transition duration-75 ease-in;
+    }
+    .kCard {
+        @apply p-3 rounded-md bg-white shadow-md h-full;
+    }
+}
